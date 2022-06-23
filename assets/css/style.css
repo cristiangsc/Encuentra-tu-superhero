@@ -1,0 +1,7 @@
+.banner {
+    height: 50vh;
+    width: 100%;
+    background-image: url(../img/sh1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}

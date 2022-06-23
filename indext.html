@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>SuperHero</title>
+</head>
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/favicon.ico" alt="" width="45" height="45" class="d-inline-block align-text-center"> SuperHero
+        </a>
+    </div>
+</nav>
+
+<article class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="banner"></div>
+        </div>
+    </div>
+</article>
+
+<article class="container">
+    <h2>Encuentra tu SuperHero</h2>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="">Ingresa el número del SuperHero a buscar</label>
+                <input id="input_busqueda" type="text" class="form-control" placeholder="Ingrese Id a buscar">
+                <button id="buscar" class="btn btn-primary btn-block mt-2">Buscar</button>
+            </div>
+        </div>
+    </div>
+</article>
+
+<article class="container mt-4">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card mb-3 show" style="max-width: 640px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img id="super-heroe" onerror="this.src='assets/img/sh2.jpg';" src="" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text" id="conexions"></p>
+                            <p class="card-text" id="publicado"></p>
+                            <hr>
+                            <p class="card-text" id="ocupacion"></p>
+                            <hr>
+                            <p class="card-text" id="aparicion"></p>
+                            <hr>
+                            <p class="card-text" id="altura"></p>
+                            <hr>
+                            <p class="card-text" id="peso"></p>
+                            <hr>
+                            <p class="card-text" id="alianza"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6" id="grafico">
+
+        </div>
+    </div>
+
+
+</article>
+
+
+
+<body>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
